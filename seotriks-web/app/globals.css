@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import "tailwindcss";
+
+
+:root {
+  --color-ice-blue: #F0FAFF;
+  --color-cloud-blue: #D5EBFB;
+  --color-soft-blue: #B6CDF6;
+  --color-medium-blue: #7BA3ED;
+  --color-seotriks-blue: #4583E8;
+  --color-deep-navy: #0B1F3A;
+  --color-primary-text: #14213D;
+  --color-secondary-text: #64748B;
+  --color-light-border: #E5EAF2;
+  --color-status-success: #10B981;
+  --color-status-warning: #F59E0B;
+  --color-status-critical: #EF4444;
+}
+
+@theme {
+  --color-ice-blue: var(--color-ice-blue);
+  --color-cloud-blue: var(--color-cloud-blue);
+  --color-soft-blue: var(--color-soft-blue);
+  --color-medium-blue: var(--color-medium-blue);
+  --color-seotriks-blue: var(--color-seotriks-blue);
+  --color-deep-navy: var(--color-deep-navy);
+  --color-primary-text: var(--color-primary-text);
+  --color-secondary-text: var(--color-secondary-text);
+  --color-light-border: var(--color-light-border);
+  --color-status-success: var(--color-status-success);
+  --color-status-warning: var(--color-status-warning);
+  --color-status-critical: var(--color-status-critical);
+
+  --font-display-hero: "Plus Jakarta Sans", sans-serif;
+  --font-headline-lg: "Plus Jakarta Sans", sans-serif;
+  --font-headline-md: "Plus Jakarta Sans", sans-serif;
+  --font-headline-sm: "Plus Jakarta Sans", sans-serif;
+  --font-body-lg: "Plus Jakarta Sans", sans-serif;
+  --font-body-md: "Plus Jakarta Sans", sans-serif;
+  --font-body-sm: "Plus Jakarta Sans", sans-serif;
+  --font-label-lg: "Plus Jakarta Sans", sans-serif;
+  --font-label-md: "Plus Jakarta Sans", sans-serif;
+  --font-label-sm: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Base AOS styles if not loaded by CDN */
+/* Missing font imports */

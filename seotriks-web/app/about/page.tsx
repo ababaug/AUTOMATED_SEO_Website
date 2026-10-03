@@ -1,0 +1,632 @@
+export default function Page() {
+    return (
+        <main className="w-full flex-1 pt-16 bg-background relative overflow-hidden"><div className="flex flex-col w-full">
+{/* SECTION 1: HERO & COMPLEXITY-TO-ACTION VISUAL PIPELINE */}
+<section className="relative w-full overflow-hidden bg-surface-bright py-space-xl lg:py-24" data-aos="fade-up" data-aos-duration="1000">
+{/* Ambient living signal vectors */}
+<div className="absolute inset-0 pointer-events-none opacity-40">
+<svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="hero-trace-grad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#8cb3ff" stop-opacity="0.3"></stop>
+<stop offset="50%" stop-color="#0059ba" stop-opacity="0.15"></stop>
+<stop offset="100%" stop-color="#d7e2ff" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+<path d="M -50 180 C 300 120, 500 360, 950 210 S 1400 320, 1600 140" fill="none" stroke="url(#hero-trace-grad)" strokeDasharray="6 4" strokeWidth="1.5"></path>
+<circle cx="450" cy="235" fill="#0059ba" r="4"></circle>
+<circle cx="950" cy="210" fill="#3072d6" r="5"></circle>
+<circle cx="1280" cy="270" fill="#8cb3ff" r="3.5"></circle>
+</svg>
+</div>
+<div className="relative max-w-7xl mx-auto px-margin sm:px-margin-md lg:px-margin-lg">
+{/* Eyebrow & Headline */}
+<div className="max-w-3xl space-y-space-md mb-space-xl">
+<div className="inline-flex items-center gap-space-xs px-3.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider shadow-sm" data-aos="fade-up" data-aos-duration="1000">
+<span className="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+          Our Philosophy • Built for Clarity
+        </div>
+<h1 className="font-display-hero text-display-hero-mobile lg:text-display-hero text-on-surface font-extrabold tracking-tight" data-aos="fade-down" data-aos-delay="0">
+          SEO shouldn't require a <span className="text-primary">dashboard full of confusion.</span>
+</h1>
+<p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+          We built SEOtriks because modern growth teams are drowning in raw crawl data and starving for actionable direction. Here is our story, philosophy, and architectural mission.
+        </p>
+</div>
+{/* VISUAL DIAGRAM: COMPLEXITY → CLARITY → ACTION */}
+<div className="w-full bg-surface-container-lowest rounded-xl shadow-xl p-space-lg lg:p-space-xl relative overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
+<div className="flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+{/* State 1: Complexity */}
+<div className="w-full lg:w-1/3 bg-surface-container-low rounded-xl p-space-lg relative flex flex-col justify-between min-h-[340px]" data-aos="fade-up" data-aos-duration="1000">
+<div>
+<div className="flex items-center justify-between mb-space-sm">
+<span className="font-label-sm text-label-sm uppercase font-bold text-error tracking-wider">State 01 • The Problem</span>
+<span className="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">1,842 Unfiltered Errors</span>
+</div>
+<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs" data-aos="fade-up" data-aos-delay="100">Tangled Complexity</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant" data-aos="fade-up" data-aos-delay="200">Infinite raw crawl logs, conflicting priority ranks, and alert fatigue that paralyses dev sprints.</p>
+</div>
+{/* Chaotic SVG cluster */}
+<div className="relative w-full h-40 mt-4 rounded-lg bg-surface-container overflow-hidden flex items-center justify-center" data-aos="fade-up" data-aos-duration="1000">
+<svg className="w-full h-full" fill="none" viewBox="0 0 280 140" xmlns="http://www.w3.org/2000/svg">
+{/* Messy polyline tangle */}
+<path d="M 20 40 L 90 90 L 140 30 L 70 120 L 190 85 L 220 30 L 160 120 L 250 110" stroke="#ba1a1a" strokeDasharray="4 2" stroke-opacity="0.45" strokeWidth="1.2"></path>
+<path d="M 40 100 L 110 30 L 160 110 L 210 50 L 130 90 L 80 40 L 240 70" stroke="#727784" stroke-opacity="0.35" strokeWidth="1.2"></path>
+<path d="M 30 70 L 170 40 L 220 120 L 90 100 L 180 20" stroke="#ba1a1a" stroke-opacity="0.4" strokeWidth="1"></path>
+{/* Chaotic Red & Gray nodes */}
+<circle cx="20" cy="40" fill="#ba1a1a" r="4.5"></circle>
+<circle cx="90" cy="90" fill="#ba1a1a" r="3"></circle>
+<circle cx="140" cy="30" fill="#727784" r="5"></circle>
+<circle cx="70" cy="120" fill="#ba1a1a" r="3.5"></circle>
+<circle cx="190" cy="85" fill="#ba1a1a" r="4.5"></circle>
+<circle cx="220" cy="30" fill="#727784" r="3"></circle>
+<circle cx="160" cy="120" fill="#ba1a1a" r="5"></circle>
+<circle cx="250" cy="110" fill="#ba1a1a" r="3"></circle>
+</svg>
+<div className="absolute bottom-2 left-2 flex items-center gap-1.5 px-2 py-0.5 rounded bg-error/10 text-error font-label-sm text-label-sm font-semibold">
+<span className="material-symbols-outlined text-sm">warning</span>
+                Overwhelming Noise
+              </div>
+</div>
+</div>
+{/* Transition 1 */}
+<div className="flex lg:flex-col items-center justify-center text-primary py-2 lg:py-0">
+<span className="material-symbols-outlined text-2xl rotate-90 lg:rotate-0">east</span>
+<span className="font-label-sm text-label-sm font-bold text-secondary uppercase tracking-widest hidden lg:block mt-1">Filter</span>
+</div>
+{/* State 2: Clarity */}
+<div className="w-full lg:w-1/3 bg-surface-container rounded-xl p-space-lg relative flex flex-col justify-between min-h-[340px]" data-aos="fade-up" data-aos-duration="1000">
+<div>
+<div className="flex items-center justify-between mb-space-sm">
+<span className="font-label-sm text-label-sm uppercase font-bold text-primary tracking-wider">State 02 • Algorithmic Logic</span>
+<span className="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Search Signals Layer</span>
+</div>
+<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs" data-aos="fade-up" data-aos-delay="100">Filtered AI Synthesis</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant" data-aos="fade-up" data-aos-delay="200">Our neural parser evaluates index trajectory, core crawl depth, and official Search Central correlations.</p>
+</div>
+{/* Harmonious Structured Graph */}
+<div className="relative w-full h-40 mt-4 rounded-lg bg-surface-container-lowest overflow-hidden flex items-center justify-center p-2" data-aos="fade-up" data-aos-duration="1000">
+<svg className="w-full h-full" fill="none" viewBox="0 0 280 140" xmlns="http://www.w3.org/2000/svg">
+{/* Clean hierarchical tree lines */}
+<path d="M 40 70 L 110 40 L 200 40" stroke="var(--color-soft-blue, #8cb3ff)" strokeWidth="2"></path>
+<path d="M 40 70 L 110 70 L 200 70" stroke="#0059ba" strokeWidth="2.5"></path>
+<path d="M 40 70 L 110 100 L 200 100" stroke="var(--color-soft-blue, #8cb3ff)" strokeWidth="2"></path>
+<circle cx="40" cy="70" fill="#0059ba" r="7"></circle>
+<circle cx="110" cy="40" fill="#3072d6" r="5"></circle>
+<circle cx="110" cy="70" fill="#0059ba" r="6"></circle>
+<circle cx="110" cy="100" fill="#3072d6" r="5"></circle>
+<circle cx="200" cy="40" fill="#8cb3ff" r="4"></circle>
+<circle cx="200" cy="70" fill="#0059ba" r="5.5"></circle>
+<circle cx="200" cy="100" fill="#8cb3ff" r="4"></circle>
+</svg>
+<div className="absolute bottom-2 left-2 flex items-center gap-1.5 px-2 py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
+<span className="material-symbols-outlined text-sm">filter_alt</span>
+                Impact Ranked
+              </div>
+</div>
+</div>
+{/* Transition 2 */}
+<div className="flex lg:flex-col items-center justify-center text-primary py-2 lg:py-0">
+<span className="material-symbols-outlined text-2xl rotate-90 lg:rotate-0">east</span>
+<span className="font-label-sm text-label-sm font-bold text-secondary uppercase tracking-widest hidden lg:block mt-1">Deploy</span>
+</div>
+{/* State 3: Action */}
+<div className="w-full lg:w-1/3 bg-primary text-on-primary rounded-xl p-space-lg relative flex flex-col justify-between min-h-[340px] shadow-lg" data-aos="fade-up" data-aos-duration="1000">
+<div>
+<div className="flex items-center justify-between mb-space-sm">
+<span className="font-label-sm text-label-sm uppercase font-bold text-primary-fixed tracking-wider">State 03 • The Outcome</span>
+<span className="px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold">3 Urgent Directives</span>
+</div>
+<h3 className="font-headline-sm text-headline-sm text-on-primary font-bold mb-space-xs" data-aos="fade-up" data-aos-delay="100">Actionable Execution</h3>
+<p className="font-body-sm text-body-sm text-primary-fixed-dim" data-aos="fade-up" data-aos-delay="200">Engineered checklists mapped directly to your engineering sprint backlog with code snippets.</p>
+</div>
+<div className="space-y-2 mt-4">
+<div className="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-lowest/15 backdrop-blur-md" data-aos="fade-up" data-aos-duration="1000">
+<div className="flex items-center gap-2">
+<span className="w-5 h-5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold flex items-center justify-center">1</span>
+<span className="font-label-md text-label-md font-medium text-on-primary">Fix 301 loop on /pricing</span>
+</div>
+<span className="font-label-sm text-label-sm font-bold text-inverse-primary">+14% Crawl Cap</span>
+</div>
+<div className="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-lowest/15 backdrop-blur-md" data-aos="fade-up" data-aos-duration="1000">
+<div className="flex items-center gap-2">
+<span className="w-5 h-5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold flex items-center justify-center">2</span>
+<span className="font-label-md text-label-md font-medium text-on-primary">Self-canonicals for locale tags</span>
+</div>
+<span className="font-label-sm text-label-sm font-bold text-inverse-primary">Index Safe</span>
+</div>
+<div className="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-lowest/15 backdrop-blur-md" data-aos="fade-up" data-aos-duration="1000">
+<div className="flex items-center gap-2">
+<span className="w-5 h-5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold flex items-center justify-center">3</span>
+<span className="font-label-md text-label-md font-medium text-on-primary">Add Product Schema markup</span>
+</div>
+<span className="font-label-sm text-label-sm font-bold text-inverse-primary">SERP Rich</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+{/* SECTION 2: OUR STORY & THE PROBLEM WE SOLVE */}
+<section className="w-full py-space-xl lg:py-24 bg-surface" data-aos="fade-up" data-aos-duration="1000">
+<div className="max-w-7xl mx-auto px-margin sm:px-margin-md lg:px-margin-lg">
+<div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+{/* Left Column: The Narrative */}
+<div className="lg:col-span-7 space-y-space-md">
+<span className="font-label-sm text-label-sm uppercase font-bold text-primary tracking-widest">Our Genesis Story</span>
+<h2 className="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-extrabold leading-tight" data-aos="fade-up" data-aos-delay="100">
+            Traditional SEO suites built 200-page audit PDFs that <span className="text-secondary">nobody ever reads.</span>
+</h2>
+<p className="font-body-md text-body-md text-on-surface-variant leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+            For more than a decade, the enterprise search tooling industry measured its value by weight: how many rows of CSV tables it could export, how many warning triangles it could paint red, and how many esoteric HTML metrics it could surface.
+          </p>
+<p className="font-body-md text-body-md text-on-surface-variant leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+            The consequence? Search analysts spent 30 hours per month compiling slideware decks instead of driving indexing gains. Engineering leads dismissed SEO tickets as unsubstantiated nagging. Meanwhile, organic traffic dropped in silence because the one critical crawl blocker was buried under 5,000 harmless notice-level warnings.
+          </p>
+<div className="pt-2">
+<blockquote className="p-space-md rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md italic shadow-sm">
+              “We didn't need another crawler that exports 100,000 rows of spreadsheets. We needed an intelligence engine that says: do these three things right now or your core organic cluster will lose page-one authority.”
+              <footer className="mt-space-sm font-label-md text-label-md font-bold text-primary not-italic">
+                — Elena Rostova, Co-Founder &amp; Chief Product Architect
+              </footer>
+</blockquote>
+</div>
+</div>
+{/* Right Column: Visual Storytelling Stat Bento */}
+<div className="lg:col-span-5 flex flex-col gap-space-md">
+{/* Stat Card 1 */}
+<div className="p-space-lg rounded-xl bg-surface-container-lowest shadow-md hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-duration="1000">
+<div className="flex items-center justify-between mb-space-sm">
+<span className="w-10 h-10 rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span className="material-symbols-outlined">pie_chart</span>
+</span>
+<span className="font-label-sm text-label-sm uppercase font-bold text-error">Industry Reality</span>
+</div>
+<div className="font-display-hero text-headline-lg text-on-surface font-extrabold">84%</div>
+<div className="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">Recommendations Ignored</div>
+<p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs" data-aos="fade-up" data-aos-delay="200">
+              Of enterprise SEO audit recommendations are never implemented due to cognitive fatigue and absence of clear engineering impact prioritization.
+            </p>
+</div>
+{/* Stat Card 2 */}
+<div className="p-space-lg rounded-xl bg-surface-container-high shadow-md hover:shadow-xl transition-all duration-300 relative overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
+<div className="flex items-center justify-between mb-space-sm">
+<span className="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span className="material-symbols-outlined">speed</span>
+</span>
+<span className="font-label-sm text-label-sm uppercase font-bold text-primary">Velocity Shift</span>
+</div>
+<div className="flex items-baseline gap-2">
+<span className="font-headline-md text-headline-md text-outline line-through">14 Days</span>
+<span className="text-primary font-headline-md text-headline-md font-extrabold">→ 12 Mins</span>
+</div>
+<div className="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">Critical Degradation Detection</div>
+<p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs" data-aos="fade-up" data-aos-delay="200">
+              Average turnaround to isolate accidental noindex tags, canonical drift, or crawl drops. SEOtriks signals anomalies instantly before rankings slide.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+{/* SECTION 3: MISSION & 4 CORE PRINCIPLES */}
+<section className="w-full py-space-xl lg:py-24 bg-surface-container-low" data-aos="fade-up" data-aos-duration="1000">
+<div className="max-w-7xl mx-auto px-margin sm:px-margin-md lg:px-margin-lg">
+<div className="text-center max-w-2xl mx-auto mb-space-xl">
+<span className="font-label-sm text-label-sm uppercase font-bold text-primary tracking-widest">Our Guiding North Stars</span>
+<h2 className="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-extrabold mt-space-xs" data-aos="fade-up" data-aos-delay="100">
+          Built on principles that put execution over vanity metrics.
+        </h2>
+<p className="font-body-md text-body-md text-on-surface-variant mt-space-sm" data-aos="fade-up" data-aos-delay="200">
+          Every algorithmic decision, telemetry pipeline, and user flow inside SEOtriks honors these four fundamental commitments.
+        </p>
+</div>
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+{/* Principle 1 */}
+<div className="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-duration="1000">
+<div>
+<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-space-md" data-aos="fade-up" data-aos-duration="1000">
+<span className="material-symbols-outlined text-2xl" style={{ fontVariationSettings: '"FILL" 1' }}>target</span>
+</div>
+<span className="font-label-sm text-label-sm font-bold text-primary uppercase tracking-wider">Principle 01</span>
+<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-space-xs" data-aos="fade-up" data-aos-delay="100">Action Over Volume</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+              We never swamp your team with 50,000 raw telemetry points. We isolate the vital 3 changes that dictate 80% of actual SERP movement.
+            </p>
+</div>
+<div className="pt-space-md mt-space-md">
+<span className="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+              80/20 Pareto Enforcement
+              <span className="material-symbols-outlined text-sm">check_circle</span>
+</span>
+</div>
+</div>
+{/* Principle 2 */}
+<div className="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-duration="1000">
+<div>
+<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-space-md" data-aos="fade-up" data-aos-duration="1000">
+<span className="material-symbols-outlined text-2xl" style={{ fontVariationSettings: '"FILL" 1' }}>verified_user</span>
+</div>
+<span className="font-label-sm text-label-sm font-bold text-primary uppercase tracking-wider">Principle 02</span>
+<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-space-xs" data-aos="fade-up" data-aos-delay="100">Transparent AI Logic</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+              Zero black-box hallucinations. Every single ranking suggestion is backed by verifiable empirical crawl nodes and cited against Google Search Central documentation.
+            </p>
+</div>
+<div className="pt-space-md mt-space-md">
+<span className="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+              Deterministic Citation Trace
+              <span className="material-symbols-outlined text-sm">check_circle</span>
+</span>
+</div>
+</div>
+{/* Principle 3 */}
+<div className="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-duration="1000">
+<div>
+<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-space-md" data-aos="fade-up" data-aos-duration="1000">
+<span className="material-symbols-outlined text-2xl" style={{ fontVariationSettings: '"FILL" 1' }}>radar</span>
+</div>
+<span className="font-label-sm text-label-sm font-bold text-primary uppercase tracking-wider">Principle 03</span>
+<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-space-xs" data-aos="fade-up" data-aos-delay="100">Continuous Vigilance</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+              SEO is not a static quarterly PDF checkup. Search indexation is a living, continuous network that demands real-time autonomous crawling and alert triggers.
+            </p>
+</div>
+<div className="pt-space-md mt-space-md">
+<span className="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+              Always-on Web Crawler Daemon
+              <span className="material-symbols-outlined text-sm">check_circle</span>
+</span>
+</div>
+</div>
+{/* Principle 4 */}
+<div className="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-duration="1000">
+<div>
+<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-space-md" data-aos="fade-up" data-aos-duration="1000">
+<span className="material-symbols-outlined text-2xl" style={{ fontVariationSettings: '"FILL" 1' }}>groups</span>
+</div>
+<span className="font-label-sm text-label-sm font-bold text-primary uppercase tracking-wider">Principle 04</span>
+<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-space-xs" data-aos="fade-up" data-aos-delay="100">Built for Teams</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+              Frictionless alignment across disciplines. Marketers get plain-English impact projections; developers receive exact pull-request code snippets and schema payloads.
+            </p>
+</div>
+<div className="pt-space-md mt-space-md">
+<span className="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+              Native Git &amp; Jira Integrations
+              <span className="material-symbols-outlined text-sm">check_circle</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+{/* SECTION 4: ARCHITECTURAL DIFFERENTIATORS & DIAGRAMMATIC BREAKDOWNS */}
+<section className="w-full py-space-xl lg:py-24 bg-surface" data-aos="fade-up" data-aos-duration="1000">
+<div className="max-w-7xl mx-auto px-margin sm:px-margin-md lg:px-margin-lg">
+<div className="max-w-3xl mb-space-xl">
+<span className="font-label-sm text-label-sm uppercase font-bold text-primary tracking-widest">Under The Hood</span>
+<h2 className="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-extrabold mt-space-xs" data-aos="fade-up" data-aos-delay="100">
+          The engineering pillars behind SEOtriks.
+        </h2>
+<p className="font-body-md text-body-md text-on-surface-variant mt-space-sm" data-aos="fade-up" data-aos-delay="200">
+          Instead of wrapping commodity scraping APIs, we built three bespoke computational layers to bridge raw telemetry with concrete code commits.
+        </p>
+</div>
+<div className="grid grid-cols-1 lg:grid-cols-3 gap-gutter-lg">
+{/* Differentiator 1 */}
+<div className="bg-surface-container-lowest rounded-xl p-space-lg shadow-md flex flex-col justify-between" data-aos="fade-up" data-aos-duration="1000">
+<div className="space-y-space-md">
+<div className="flex items-center justify-between">
+<span className="px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Engine 01</span>
+<span className="material-symbols-outlined text-primary">tune</span>
+</div>
+<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold" data-aos="fade-up" data-aos-delay="100">The Priority Engine</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant" data-aos="fade-up" data-aos-delay="200">
+              Proprietary weighting matrix that crosses page revenue intent with algorithmic crawl difficulty, filtering out non-impact noise.
+            </p>
+{/* Visual Engine Mini-Diagram */}
+<div className="bg-surface-container-low rounded-lg p-space-md space-y-2" data-aos="fade-up" data-aos-duration="1000">
+<div className="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Revenue Path Impact</span>
+<span className="font-bold text-on-surface">94 / 100</span>
+</div>
+<div className="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
+<div className="bg-primary h-full rounded-full" style={{ width: '94%' }}></div>
+</div>
+<div className="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span>Effort vs Reward Quotient</span>
+<span className="font-bold text-secondary">High Yield</span>
+</div>
+</div>
+</div>
+<div className="mt-space-lg pt-space-md">
+<p className="font-label-sm text-label-sm text-outline" data-aos="fade-up" data-aos-delay="200">Output: Automatically tagged Github issues with prioritized sprint weight.</p>
+</div>
+</div>
+{/* Differentiator 2 */}
+<div className="bg-surface-container-lowest rounded-xl p-space-lg shadow-md flex flex-col justify-between" data-aos="fade-up" data-aos-duration="1000">
+<div className="space-y-space-md">
+<div className="flex items-center justify-between">
+<span className="px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Engine 02</span>
+<span className="material-symbols-outlined text-primary">published_with_changes</span>
+</div>
+<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold" data-aos="fade-up" data-aos-delay="100">Change Verification Pipeline</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant" data-aos="fade-up" data-aos-delay="200">
+              When a developer pushes an SEO fix, our edge worker verifies live rendering in sandbox staging before Googlebot crawls the mistake.
+            </p>
+{/* Verification Mini-Diagram */}
+<div className="bg-surface-container-low rounded-lg p-space-md" data-aos="fade-up" data-aos-duration="1000">
+<div className="flex items-center gap-2 mb-2 font-label-sm text-label-sm font-bold text-on-surface">
+<span className="w-2 h-2 rounded-full bg-secondary"></span> Staging Edge Worker Active
+              </div>
+<div className="space-y-1.5 font-label-sm text-label-sm">
+<div className="flex items-center justify-between p-1.5 rounded bg-surface-container-lowest" data-aos="fade-up" data-aos-duration="1000">
+<span className="text-on-surface-variant">DOM Meta Canonical</span>
+<span className="font-bold text-primary">Verified ✓</span>
+</div>
+<div className="flex items-center justify-between p-1.5 rounded bg-surface-container-lowest" data-aos="fade-up" data-aos-duration="1000">
+<span className="text-on-surface-variant">JSON-LD Syntax</span>
+<span className="font-bold text-primary">Valid Schema ✓</span>
+</div>
+</div>
+</div>
+</div>
+<div className="mt-space-lg pt-space-md">
+<p className="font-label-sm text-label-sm text-outline" data-aos="fade-up" data-aos-delay="200">Output: Zero deployment regressions reaching indexed production environments.</p>
+</div>
+</div>
+{/* Differentiator 3 */}
+<div className="bg-surface-container-lowest rounded-xl p-space-lg shadow-md flex flex-col justify-between" data-aos="fade-up" data-aos-duration="1000">
+<div className="space-y-space-md">
+<div className="flex items-center justify-between">
+<span className="px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Engine 03</span>
+<span className="material-symbols-outlined text-primary">visibility</span>
+</div>
+<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold" data-aos="fade-up" data-aos-delay="100">AI Visibility Tracker</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant" data-aos="fade-up" data-aos-delay="200">
+              Tracks rank visibility across traditional SERPs alongside LLM citation nodes (SearchGPT, Perplexity, Gemini Overviews).
+            </p>
+{/* Visual Sparkline Simulation */}
+<div className="bg-surface-container-low rounded-lg p-space-md" data-aos="fade-up" data-aos-duration="1000">
+<div className="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mb-2">
+<span>LLM Citation Share</span>
+<span className="font-bold text-primary">+28.4% this mo</span>
+</div>
+<svg className="w-full h-12" fill="none" viewBox="0 0 200 48">
+<path d="M 0 40 Q 40 38, 80 28 T 140 18 T 200 6" stroke="#0059ba" strokeWidth="2.5"></path>
+<path d="M 0 40 Q 40 38, 80 28 T 140 18 T 200 6 L 200 48 L 0 48 Z" fill="#3072d6" fill-opacity="0.1"></path>
+<circle cx="200" cy="6" fill="#0059ba" r="3.5"></circle>
+</svg>
+</div>
+</div>
+<div className="mt-space-lg pt-space-md">
+<p className="font-label-sm text-label-sm text-outline" data-aos="fade-up" data-aos-delay="200">Output: Unified visibility telemetry for both Google &amp; AI answer platforms.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+{/* SECTION 5: WHO WE SERVE */}
+<section className="w-full py-space-xl lg:py-24 bg-surface-container-low" data-aos="fade-up" data-aos-duration="1000">
+<div className="max-w-7xl mx-auto px-margin sm:px-margin-md lg:px-margin-lg">
+<div className="max-w-2xl mx-auto text-center mb-space-xl">
+<span className="font-label-sm text-label-sm uppercase font-bold text-primary tracking-widest">Tailored Workflows</span>
+<h2 className="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-extrabold mt-space-xs" data-aos="fade-up" data-aos-delay="100">
+          Built for everyone with skin in the organic growth game.
+        </h2>
+</div>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-gutter-lg">
+{/* Segment 1 */}
+<div className="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-lg transition-all flex flex-col sm:flex-row gap-space-md items-start" data-aos="fade-up" data-aos-duration="1000">
+<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0" data-aos="fade-up" data-aos-duration="1000">
+<span className="material-symbols-outlined text-2xl">rocket_launch</span>
+</div>
+<div className="space-y-space-xs">
+<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold" data-aos="fade-up" data-aos-delay="100">Fast-Growing SaaS &amp; E-commerce</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+              Programmatic URL structures, multi-faceted filtering, and rapid weekly code deployments create complex indexing loops. SEOtriks safeguards your core category money-pages.
+            </p>
+<div className="pt-space-xs flex flex-wrap gap-2">
+<span className="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Facet Index Protection</span>
+<span className="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">High-Scale Sitemaps</span>
+</div>
+</div>
+</div>
+{/* Segment 2 */}
+<div className="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-lg transition-all flex flex-col sm:flex-row gap-space-md items-start" data-aos="fade-up" data-aos-duration="1000">
+<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0" data-aos="fade-up" data-aos-duration="1000">
+<span className="material-symbols-outlined text-2xl">domain</span>
+</div>
+<div className="space-y-space-xs">
+<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold" data-aos="fade-up" data-aos-delay="100">Modern Digital Agencies</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+              Eliminate the 40-hour monthly reporting trap. Hand clients pristine, automated executive summaries that clearly demonstrate organic ARR impact and verified fixes.
+            </p>
+<div className="pt-space-xs flex flex-wrap gap-2">
+<span className="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Multi-Tenant Portals</span>
+<span className="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Automated Client Deliverables</span>
+</div>
+</div>
+</div>
+{/* Segment 3 */}
+<div className="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-lg transition-all flex flex-col sm:flex-row gap-space-md items-start" data-aos="fade-up" data-aos-duration="1000">
+<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0" data-aos="fade-up" data-aos-duration="1000">
+<span className="material-symbols-outlined text-2xl">terminal</span>
+</div>
+<div className="space-y-space-xs">
+<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold" data-aos="fade-up" data-aos-delay="100">In-house SEOs &amp; Technical Leads</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+              Translate search theory into dev-ready Jira specifications. Give software engineers exact line modifications instead of abstract “improve website speed” instructions.
+            </p>
+<div className="pt-space-xs flex flex-wrap gap-2">
+<span className="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Code-Snippet Generation</span>
+<span className="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Core Web Vitals Trace</span>
+</div>
+</div>
+</div>
+{/* Segment 4 */}
+<div className="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-lg transition-all flex flex-col sm:flex-row gap-space-md items-start" data-aos="fade-up" data-aos-duration="1000">
+<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0" data-aos="fade-up" data-aos-duration="1000">
+<span className="material-symbols-outlined text-2xl">person</span>
+</div>
+<div className="space-y-space-xs">
+<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold" data-aos="fade-up" data-aos-delay="100">Solo Founders &amp; Builders</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+              You do not have time to earn an advanced degree in Google algorithm updates. SEOtriks operates as your on-demand chief search architect for a fraction of the cost.
+            </p>
+<div className="pt-space-xs flex flex-wrap gap-2">
+<span className="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">1-Click Quick Audits</span>
+<span className="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Plain English Guides</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+{/* SECTION 6: LEADERSHIP & TEAM CULTURE */}
+<section className="w-full py-space-xl lg:py-24 bg-surface" data-aos="fade-up" data-aos-duration="1000">
+<div className="max-w-7xl mx-auto px-margin sm:px-margin-md lg:px-margin-lg">
+{/* Section Title & Values */}
+<div className="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-xl">
+<div className="max-w-2xl">
+<span className="font-label-sm text-label-sm uppercase font-bold text-primary tracking-widest">The Minds Behind The Engine</span>
+<h2 className="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-extrabold mt-space-xs" data-aos="fade-up" data-aos-delay="100">
+            Engineered by search veterans and distributed systems builders.
+          </h2>
+<p className="font-body-md text-body-md text-on-surface-variant mt-space-sm" data-aos="fade-up" data-aos-delay="200">
+            We are a globally distributed team spanning Zurich, San Francisco, London, and Tokyo. United by a collective obsession with algorithmic transparency and high-throughput web crawling.
+          </p>
+</div>
+{/* 3 Core Company Values Pill Stack */}
+<div className="flex flex-wrap lg:flex-nowrap gap-space-sm shrink-0">
+<div className="px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-2" data-aos="fade-up" data-aos-duration="1000">
+<span className="w-2 h-2 rounded-full bg-primary"></span>
+            Radical Clarity
+          </div>
+<div className="px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-2" data-aos="fade-up" data-aos-duration="1000">
+<span className="w-2 h-2 rounded-full bg-secondary"></span>
+            Relentless Curiosity
+          </div>
+<div className="px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-2" data-aos="fade-up" data-aos-duration="1000">
+<span className="w-2 h-2 rounded-full bg-primary-container"></span>
+            Engineering Rigor
+          </div>
+</div>
+</div>
+{/* Team Members Grid */}
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter-lg">
+{/* Member 1 */}
+<div className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-duration="1000">
+<div className="h-64 w-full overflow-hidden bg-surface-container relative" data-aos="fade-up" data-aos-duration="1000">
+<img className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" data-alt="Professional studio headshot of Elena Rostova, a confident female tech co-founder with a warm smile, wearing a dark navy blazer, soft cinematic corporate lighting, modern minimalist bright blue studio aesthetic." data-aos="zoom-in" data-aos-duration="800" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6irG2uK6AroWNZtTew8am1NI_u-gM5cA4TMY_I0Wre_gnFA_wxIOZkYo52YAg4EbipIu4KcKW_FI9TZ85htEHlNsAjbkZi7x1wFjP96FYOF209m1oXuV9dNegBvS0UuhxnfchknbRJ4sIPx5d9F_mEThzAi3eCgWEGTIIT5bqp7UbK_EnW4MXy7OFug74HSWj_PBlVXdkhthcl5IXIK8dAm1KhmKSP1dhwdTieppXFN6osM9AT_B5"/>
+<div className="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-md font-label-sm text-label-sm font-semibold text-primary" data-aos="fade-up" data-aos-duration="1000">
+              Co-Founder &amp; CPO
+            </div>
+</div>
+<div className="p-space-lg space-y-space-xs">
+<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold" data-aos="fade-up" data-aos-delay="100">Elena Rostova</h3>
+<p className="font-label-md text-label-md text-secondary font-medium" data-aos="fade-up" data-aos-delay="200">Former Head of Growth at ScalePath</p>
+<p className="font-body-sm text-body-sm text-on-surface-variant pt-space-xs" data-aos="fade-up" data-aos-delay="200">
+              Spent 9 years scaling enterprise organic search infrastructure across Fortune 500 catalog websites before designing the SEOtriks priority schema.
+            </p>
+</div>
+</div>
+{/* Member 2 */}
+<div className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-duration="1000">
+<div className="h-64 w-full overflow-hidden bg-surface-container relative" data-aos="fade-up" data-aos-duration="1000">
+<img className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" data-alt="Professional studio headshot portrait of Marcus Vance, male Chief Technology Officer, thoughtful expression with glasses, clean architectural lighting with soft blue fill tones, wearing a charcoal crewneck sweater." data-aos="zoom-in" data-aos-duration="800" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD20V93kNhLDnmZ9Kp5egj9b8lL3SSV_e0-s8SYxp_AsfnzcMxc1NMVCDhT9JuA1Zc3vcFlUb8frTrWyzJ2NNo8hEpXoH8iLTjy6zNXlS0X1WPMNvGY2kPam0cOSnUFC0iKZkc2riJXzLaOwveBW5XCVy0Bf4cu-fI8nA2RHRzAseSDP3uIJZmQE4O3JdDPZytPigoWFZWGr3TErUbLEJaA1bhNDIVua-5WjARUkUoNX5H4CBpZp2wx"/>
+<div className="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-md font-label-sm text-label-sm font-semibold text-primary" data-aos="fade-up" data-aos-duration="1000">
+              Co-Founder &amp; CTO
+            </div>
+</div>
+<div className="p-space-lg space-y-space-xs">
+<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold" data-aos="fade-up" data-aos-delay="100">Marcus Vance</h3>
+<p className="font-label-md text-label-md text-secondary font-medium" data-aos="fade-up" data-aos-delay="200">Ex-Infrastructure Architect at CloudVibe</p>
+<p className="font-body-sm text-body-sm text-on-surface-variant pt-space-xs" data-aos="fade-up" data-aos-delay="200">
+              Distributed systems engineer who previously maintained real-time scraping clusters indexing over 40 million web pages every twenty-four hours.
+            </p>
+</div>
+</div>
+{/* Member 3 */}
+<div className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-duration="1000">
+<div className="h-64 w-full overflow-hidden bg-surface-container relative" data-aos="fade-up" data-aos-duration="1000">
+<img className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" data-alt="Professional studio portrait of Dr. Kenji Takahashi, search algorithms researcher, energetic friendly expression, wearing a minimalist collared shirt against a sleek ice blue geometric studio background." data-aos="zoom-in" data-aos-duration="800" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClkeiZDDfjF1WFmVXvig7CmEGXgVV5a-XKylgMTB4iKAFXmvackvastdL557lNdX_mevuj6ibrdeug-jn1g4AlIjHvTqle6_EN5UxJOXpNJsCfmH4x2RIRe4eU-NxwO2w_b79kh1d_86TQrfmG57baoOvTbQKSm9evmPPIm_4u-LFLrKuVdnSSLejYrDluv-aBDbx6hDyWdu0QYiyp4XYZ6i_wBQBbEZoerl5WCAXl1PFFbyl9CdJa"/>
+<div className="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-md font-label-sm text-label-sm font-semibold text-primary" data-aos="fade-up" data-aos-duration="1000">
+              Head of Search Intelligence
+            </div>
+</div>
+<div className="p-space-lg space-y-space-xs">
+<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold" data-aos="fade-up" data-aos-delay="100">Dr. Kenji Takahashi</h3>
+<p className="font-label-md text-label-md text-secondary font-medium" data-aos="fade-up" data-aos-delay="200">PhD in Information Retrieval, Tokyo Tech</p>
+<p className="font-body-sm text-body-sm text-on-surface-variant pt-space-xs" data-aos="fade-up" data-aos-delay="200">
+              Directs our proprietary SERP Signal model, researching natural language shifts, search intent vectors, and Google Search Central heuristic updates.
+            </p>
+</div>
+</div>
+</div>
+{/* Remote Culture Banner */}
+<div className="mt-space-xl p-space-lg lg:p-space-xl rounded-xl bg-surface-container-high flex flex-col md:flex-row items-center justify-between gap-space-lg" data-aos="fade-up" data-aos-duration="1000">
+<div className="space-y-space-xs max-w-xl">
+<div className="font-headline-sm text-headline-sm text-on-surface font-bold">Radically distributed. Intensely focused.</div>
+<p className="font-body-sm text-body-sm text-on-surface-variant" data-aos="fade-up" data-aos-delay="200">
+            We don’t believe in mandatory office cubes or marathon bureaucratic status calls. We empower engineers and analysts across 7 timezones to do their best focused work.
+          </p>
+</div>
+<a className="inline-flex items-center gap-2 px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-primary font-label-lg text-label-lg font-bold shadow-sm hover:bg-surface-container transition-colors shrink-0" data-aos="fade-up" data-aos-delay="300" data-path="careers" href="#">
+          View Open Engineering Roles
+          <span className="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+{/* SECTION 7: FINAL ABOUT CTA */}
+<section className="w-full py-space-xl lg:py-24 bg-surface-container relative overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
+{/* Pulse signal overlay */}
+<div className="absolute inset-0 pointer-events-none opacity-20">
+<svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<circle cx="20%" cy="50%" fill="none" r="200" stroke="#0059ba" strokeDasharray="8 6" strokeWidth="1.5"></circle>
+<circle cx="20%" cy="50%" fill="none" opacity="0.5" r="350" stroke="var(--color-soft-blue, #8cb3ff)" strokeWidth="1"></circle>
+</svg>
+</div>
+<div className="relative max-w-5xl mx-auto px-margin sm:px-margin-md lg:px-margin-lg text-center space-y-space-md">
+<span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span className="material-symbols-outlined text-sm">bolt</span>
+        Start With Actionable Signal
+      </span>
+<h2 className="font-display-hero text-headline-lg-mobile lg:text-headline-lg text-on-surface font-extrabold tracking-tight max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        Experience the clarity of actionable SEO.
+      </h2>
+<p className="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+        Stop staring at 500-page spreadsheet audits. Connect your site in 60 seconds and get your top 3 needle-moving ranking adjustments today.
+      </p>
+<div className="pt-space-md flex flex-col sm:flex-row items-center justify-center gap-space-md">
+<a className="w-full sm:w-auto inline-flex items-center justify-center bg-primary text-on-primary font-label-lg text-label-lg px-8 py-3.5 rounded-lg shadow-md hover:bg-primary-container active:scale-[0.98] transition-all" data-aos="fade-up" data-aos-delay="300" data-path="signup" href="#">
+          Start Your Free Trial
+          <span className="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</a>
+<a className="w-full sm:w-auto inline-flex items-center justify-center bg-surface-container-lowest text-on-surface font-label-lg text-label-lg px-6 py-3.5 rounded-lg shadow-sm hover:bg-surface-bright transition-all" data-aos="fade-up" data-aos-delay="300" data-path="services" href="#">
+          Explore Technical Specs
+        </a>
+</div>
+<div className="pt-space-sm flex items-center justify-center gap-6 font-label-sm text-label-sm text-on-surface-variant">
+<span className="flex items-center gap-1">
+<span className="material-symbols-outlined text-sm text-primary">check</span>
+          No credit card required
+        </span>
+<span className="flex items-center gap-1">
+<span className="material-symbols-outlined text-sm text-primary">check</span>
+          14-day full access
+        </span>
+<span className="flex items-center gap-1">
+<span className="material-symbols-outlined text-sm text-primary">check</span>
+          Cancel anytime
+        </span>
+</div>
+</div>
+</section>
+</div>
+</main>
+    );
+}

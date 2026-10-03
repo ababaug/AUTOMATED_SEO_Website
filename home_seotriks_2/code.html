@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SEOtriks — Stop Guessing. Start Fixing What Matters.</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "ice-blue": "#F0FAFF",
+        "cloud-blue": "#D5EBFB",
+        "soft-blue": "#B6CDF6",
+        "medium-blue": "#7BA3ED",
+        "seotriks-blue": "#4583E8",
+        "deep-navy": "#0B1F3A",
+        "primary-text": "#14213D",
+        "secondary-text": "#64748B",
+        "light-border": "#E5EAF2",
+        "status-success": "#10B981",
+        "status-warning": "#F59E0B",
+        "status-critical": "#EF4444"
+      },
+      fontFamily: {
+        sans: ["'Plus Jakarta Sans'", "sans-serif"]
+      }
+    }
+  }
+};
+</script>
+<style>
+::-webkit-scrollbar { display: none; }
+body { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+</head>
+<body class="bg-ice-blue font-sans text-primary-text antialiased min-h-screen flex flex-col selection:bg-seotriks-blue selection:text-white">
+
+<!-- GLOBAL NAVIGATION HEADER -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-light-border">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <div class="flex items-center gap-8">
+      <a href="/" class="flex items-center gap-3">
+        <img alt="SEOtriks Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VPP_Ei-L9LUBaiPtAxGIJOJp_B9mlaHqHGKP3VemSWAey25P3a0LjZvi8jHrgxIAhp_F3wtyfYCc10haNZj6wGSGtnuN0sfj6A9ZgH5K4OflFzdu6Sy3e3Hv2iUxTtropJ4VZNsL2p_KFp6erNvTcmL5humRlKv0THPeIOGecHo5sfIiykOkYNXyDRoq30wFrEVw5l5qxeiP60czvBQXcFnLa_QuRlpHnkEeo0qi8TyA2R-iFcwVCodS4"/>
+      </a>
+      <nav class="hidden md:flex items-center gap-1 text-sm font-semibold">
+        <a href="/" class="px-3.5 py-1.5 rounded-lg bg-cloud-blue text-seotriks-blue">Home</a>
+        <a href="/about" class="px-3.5 py-1.5 rounded-lg text-secondary-text hover:text-seotriks-blue transition-colors">About</a>
+        <a href="/services" class="px-3.5 py-1.5 rounded-lg text-secondary-text hover:text-seotriks-blue transition-colors">Services</a>
+        <a href="/blog" class="px-3.5 py-1.5 rounded-lg text-secondary-text hover:text-seotriks-blue transition-colors">Blog</a>
+        <a href="/contact" class="px-3.5 py-1.5 rounded-lg text-secondary-text hover:text-seotriks-blue transition-colors">Contact</a>
+        <a href="/pricing" class="px-3.5 py-1.5 rounded-lg text-secondary-text hover:text-seotriks-blue transition-colors">Pricing</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="/login" class="hidden sm:inline-block text-sm font-semibold text-secondary-text hover:text-seotriks-blue transition-colors">Log In</a>
+      <a href="/pricing" class="bg-seotriks-blue hover:bg-[#326ec8] text-white text-sm font-bold px-5 py-2.5 rounded-lg shadow-sm hover:shadow-md transition-all active:scale-95">Start Free</a>
+      <div class="hidden sm:flex items-center pl-2">
+        <img alt="User Avatar" class="w-8 h-8 rounded-full object-cover ring-2 ring-cloud-blue" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdWdY4EzwtKMTLOPwdrXuARAz3cvuBTEn_sO0yFOZoz9Ayj5cxHsYxhhuF0yhOfYhGHNi_Y-NqXSAQsvyMBZbty9KXnGhLgjdrUpuXaK4ax5x7sNnWdiooLFD4GlfDpUpn7y4Sou6xsXV5bKZeddOE766ELPk2-rkAu1f41vLP5lbF453dPCH_1QkhAm3p3jp0bGrEO49ctjt1xAOZ-ZP77u6OF3L5zAz_cCx4wZJFJorZ9dUHaZ3r"/>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="flex-1 w-full overflow-hidden">
+
+  <!-- 1. HERO SECTION WITH SEARCH SIGNALS VISUAL & ACTION PLAN ENGINE -->
+  <section class="relative pt-12 pb-24 px-6 overflow-hidden">
+    <!-- Ambient Search Signals background grid -->
+    <div class="absolute inset-0 pointer-events-none opacity-40 select-none">
+      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <path d="M -40,180 Q 300,80 700,220 T 1500,160" fill="none" stroke="#B6CDF6" stroke-dasharray="6 6" stroke-width="1.5"></path>
+        <path d="M 80,440 Q 480,260 920,400 T 1600,320" fill="none" stroke="#7BA3ED" stroke-dasharray="4 4" stroke-width="1.2"></path>
+        <circle cx="300" cy="80" r="4.5" fill="#4583E8" />
+        <circle cx="700" cy="220" r="6" fill="#7BA3ED" />
+        <circle cx="920" cy="400" r="5" fill="#4583E8" />
+        <circle cx="1200" cy="180" r="3.5" fill="#B6CDF6" />
+      </svg>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto flex flex-col items-center text-center">
+      <!-- Live Pill Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cloud-blue text-seotriks-blue text-xs font-bold shadow-sm mb-6 transition-transform hover:scale-105">
+        <span class="w-2 h-2 rounded-full bg-seotriks-blue animate-ping"></span>
+        <span class="tracking-wide uppercase">Search Signal Engine 4.2 Live • Instant Action Plans</span>
+      </div>
+
+      <!-- Core Value Headline -->
+      <h1 class="text-4xl sm:text-6xl font-extrabold text-deep-navy tracking-tight max-w-4xl leading-tight mb-6">
+        Stop guessing. <br class="hidden sm:inline"/>
+        <span class="text-seotriks-blue underline decoration-cloud-blue decoration-4 underline-offset-8">Start fixing</span> what matters.
+      </h1>
+
+      <!-- Supporting Statement -->
+      <p class="text-lg sm:text-xl text-secondary-text max-w-2xl mb-10 leading-relaxed font-normal">
+        SEOtriks replaces confusing dashboards with prioritized, automated action plans. Uncover critical crawl anomalies, high-yield keyword vectors, and automated SERP defense.
+      </p>
+
+      <!-- Primary Action Cluster -->
+      <div class="flex flex-col sm:flex-row items-center gap-4 mb-6 w-full sm:w-auto">
+        <a href="/pricing" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-seotriks-blue hover:bg-[#326ec8] text-white font-bold text-base px-8 py-3.5 rounded-lg shadow-md hover:shadow-lg transition-all active:scale-95">
+          <span>Start Free Today</span>
+          <span class="material-symbols-outlined text-lg">arrow_forward</span>
+        </a>
+        <a href="/services" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-cloud-blue/50 text-primary-text border border-light-border font-semibold text-base px-7 py-3.5 rounded-lg shadow-sm transition-all">
+          <span class="material-symbols-outlined text-seotriks-blue text-lg">play_circle</span>
+          <span>See How It Works</span>
+        </a>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-6 text-secondary-text text-xs font-semibold mb-16">
+        <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-status-success text-base">verified</span> No credit card required</span>
+        <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-seotriks-blue text-base">timelapse</span> 14-day full access trial</span>
+        <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-seotriks-blue text-base">bolt</span> Connects in 60 seconds</span>
+      </div>
+
+      <!-- High-Fidelity Interactive Hero Action Engine Card -->
+      <div class="w-full max-w-5xl rounded-2xl bg-white shadow-2xl border border-light-border overflow-hidden text-left">
+        <!-- Dashboard Top Bar -->
+        <div class="px-6 py-4 bg-ice-blue border-b border-light-border flex flex-wrap items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <div class="flex items-center gap-1.5">
+              <span class="w-3 h-3 rounded-full bg-status-critical/80"></span>
+              <span class="w-3 h-3 rounded-full bg-status-warning/80"></span>
+              <span class="w-3 h-3 rounded-full bg-status-success/80"></span>
+            </div>
+            <div class="ml-2 text-xs font-semibold text-secondary-text flex items-center gap-2">
+              <span class="material-symbols-outlined text-seotriks-blue text-base">domain</span>
+              <span class="text-deep-navy font-bold">app.acmegrowth.io</span>
+              <span class="px-2 py-0.5 rounded-full bg-cloud-blue text-seotriks-blue font-bold text-[10px]">CRAWLER SYNCED</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 text-xs">
+            <span class="text-secondary-text">Crawler Speed: <strong class="text-deep-navy">1.2k pages/sec</strong></span>
+            <span class="h-3.5 w-px bg-soft-blue"></span>
+            <span class="text-status-success font-bold flex items-center gap-1">
+              <span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span>
+              24/7 SEO Guard Active
+            </span>
+          </div>
+        </div>
+
+        <!-- Main Card Body -->
+        <div class="p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <!-- Col 1: Health & Signal Metric -->
+          <div class="lg:col-span-4 flex flex-col gap-5">
+            <div class="p-6 rounded-xl bg-ice-blue border border-cloud-blue relative overflow-hidden">
+              <div class="flex justify-between items-start mb-3">
+                <span class="text-xs uppercase font-extrabold tracking-wider text-secondary-text">Health Index</span>
+                <span class="px-2.5 py-0.5 rounded-full bg-cloud-blue text-seotriks-blue text-xs font-bold">+12% MoM</span>
+              </div>
+              <div class="flex items-baseline gap-2 mb-2">
+                <span class="text-5xl font-black text-deep-navy">94</span>
+                <span class="text-xl text-secondary-text">/100</span>
+              </div>
+              <p class="text-xs text-secondary-text mb-4">6 critical resolutions recorded across 4,190 discovered URL pathways.</p>
+              <div class="w-full bg-soft-blue/40 rounded-full h-2 overflow-hidden">
+                <div class="bg-seotriks-blue h-2 rounded-full" style="width: 94%"></div>
+              </div>
+            </div>
+
+            <!-- Signal Graph Preview -->
+            <div class="p-6 rounded-xl bg-ice-blue border border-cloud-blue">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs font-bold text-deep-navy">Crawl Efficiency Signal</span>
+                <span class="text-xs font-bold text-status-success">+38.4%</span>
+              </div>
+              <svg class="w-full h-16" fill="none" viewBox="0 0 240 60">
+                <path d="M 0 50 Q 40 45 70 30 T 140 38 T 200 12 T 240 8" fill="none" stroke="#4583E8" stroke-linecap="round" stroke-width="2.5"></path>
+                <path d="M 0 50 Q 40 45 70 30 T 140 38 T 200 12 T 240 8 L 240 60 L 0 60 Z" fill="url(#sigHeroGradient)" opacity="0.15"></path>
+                <defs>
+                  <linearGradient id="sigHeroGradient" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#4583E8"></stop>
+                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="flex justify-between items-center text-[10px] text-secondary-text font-medium mt-2">
+                <span>May 01</span>
+                <span>May 15</span>
+                <span class="text-seotriks-blue font-bold">Today (Realtime)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 2: Priority Action Queue -->
+          <div class="lg:col-span-8 flex flex-col gap-3.5">
+            <div class="flex items-center justify-between pb-1">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-seotriks-blue text-xl">checklist_rtl</span>
+                <h3 class="text-lg font-bold text-deep-navy">Automated Priority Queue</h3>
+              </div>
+              <span class="px-2.5 py-0.5 rounded-full bg-cloud-blue text-seotriks-blue text-xs font-bold">3 High Impact</span>
+            </div>
+
+            <!-- Action Item 1 -->
+            <div class="p-4 rounded-xl bg-ice-blue border border-cloud-blue hover:border-seotriks-blue transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-status-critical mt-0.5 text-xl">error</span>
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-sm font-bold text-deep-navy">Canonical mismatch loop detected</span>
+                    <span class="px-2 py-0.2 rounded-full bg-red-100 text-status-critical text-[10px] font-bold">CRITICAL</span>
+                  </div>
+                  <p class="text-xs text-secondary-text mt-0.5">Route <code class="text-seotriks-blue font-semibold">/pricing/enterprise</code> claims self-canonical while sitemap targets <code class="text-seotriks-blue font-semibold">/pricing</code>.</p>
+                </div>
+              </div>
+              <button class="shrink-0 bg-seotriks-blue text-white text-xs font-bold px-4 py-2 rounded-lg hover:bg-[#326ec8] transition-colors shadow-sm">
+                Apply Fix
+              </button>
+            </div>
+
+            <!-- Action Item 2 -->
+            <div class="p-4 rounded-xl bg-ice-blue border border-cloud-blue hover:border-seotriks-blue transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-status-warning mt-0.5 text-xl">warning</span>
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-sm font-bold text-deep-navy">Missing primary H1 tag hierarchy</span>
+                    <span class="px-2 py-0.2 rounded-full bg-amber-100 text-status-warning text-[10px] font-bold">REVENUE RISK</span>
+                  </div>
+                  <p class="text-xs text-secondary-text mt-0.5">Affects 14 high-volume product SKU catalog pages ranking between #4 and #8.</p>
+                </div>
+              </div>
+              <button class="shrink-0 bg-white text-seotriks-blue border border-soft-blue text-xs font-bold px-4 py-2 rounded-lg hover:bg-cloud-blue/50 transition-colors shadow-sm">
+                Generate Tags
+              </button>
+            </div>
+
+            <!-- Action Item 3 -->
+            <div class="p-4 rounded-xl bg-ice-blue border border-cloud-blue hover:border-seotriks-blue transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-seotriks-blue mt-0.5 text-xl">speed</span>
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-sm font-bold text-deep-navy">4.2s Mobile LCP degradation</span>
+                    <span class="px-2 py-0.2 rounded-full bg-cloud-blue text-seotriks-blue text-[10px] font-bold">CORE WEB VITALS</span>
+                  </div>
+                  <p class="text-xs text-secondary-text mt-0.5">Uncompressed hero vector weights 1.9MB on template entry modules.</p>
+                </div>
+              </div>
+              <button class="shrink-0 bg-white text-seotriks-blue border border-soft-blue text-xs font-bold px-4 py-2 rounded-lg hover:bg-cloud-blue/50 transition-colors shadow-sm">
+                Optimize Assets
+              </button>
+            </div>
+
+            <!-- Embedded AI Agent Suggestion Bar -->
+            <div class="mt-2 p-3.5 rounded-xl bg-cloud-blue/60 border border-soft-blue flex items-center justify-between gap-3">
+              <div class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-seotriks-blue text-lg">psychology</span>
+                <span class="text-xs text-deep-navy font-semibold">SEOtriks AI Agent: "Executing these 3 fixes will recover an estimated +4,800 monthly visits."</span>
+              </div>
+              <span class="text-xs text-seotriks-blue font-bold hover:underline cursor-pointer shrink-0">Auto-Apply All</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. TRUST & SOCIAL VALIDATION STRIP -->
+  <section class="w-full bg-white border-y border-light-border py-12 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col items-center">
+      <p class="text-xs text-secondary-text tracking-widest uppercase font-extrabold mb-8 text-center">
+        Trusted by over 4,200+ forward-thinking SEOs, agencies, and hyper-growth brands
+      </p>
+      <div class="w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center opacity-70">
+        <div class="flex items-center gap-2 text-lg font-black text-deep-navy hover:text-seotriks-blue transition-colors cursor-pointer">
+          <span class="material-symbols-outlined text-xl text-seotriks-blue">rocket_launch</span> Veloce
+        </div>
+        <div class="flex items-center gap-2 text-lg font-black text-deep-navy hover:text-seotriks-blue transition-colors cursor-pointer">
+          <span class="material-symbols-outlined text-xl text-seotriks-blue">layers</span> StackWave
+        </div>
+        <div class="flex items-center gap-2 text-lg font-black text-deep-navy hover:text-seotriks-blue transition-colors cursor-pointer">
+          <span class="material-symbols-outlined text-xl text-seotriks-blue">terminal</span> DevPulse
+        </div>
+        <div class="flex items-center gap-2 text-lg font-black text-deep-navy hover:text-seotriks-blue transition-colors cursor-pointer">
+          <span class="material-symbols-outlined text-xl text-seotriks-blue">analytics</span> MetricsOps
+        </div>
+        <div class="flex items-center gap-2 text-lg font-black text-deep-navy hover:text-seotriks-blue transition-colors cursor-pointer">
+          <span class="material-symbols-outlined text-xl text-seotriks-blue">all_inclusive</span> InfinityScale
+        </div>
+        <div class="flex items-center gap-2 text-lg font-black text-deep-navy hover:text-seotriks-blue transition-colors cursor-pointer">
+          <span class="material-symbols-outlined text-xl text-seotriks-blue">cloud_sync</span> CloudIndex
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. BENEFIT PILLARS SECTION -->
+  <section class="w-full py-24 px-6 bg-ice-blue">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="text-xs text-seotriks-blue font-extrabold tracking-widest uppercase mb-3">Clarity Over Chaos</div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-deep-navy mb-4 tracking-tight">
+          Engineered to cut through endless search noise
+        </h2>
+        <p class="text-base sm:text-lg text-secondary-text">
+          Legacy tools dump gigabytes of raw data in your lap. SEOtriks continuously triages, scores, and directs your team toward immediate revenue-generating adjustments.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Benefit 1 -->
+        <div class="p-8 rounded-2xl bg-white border border-light-border shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-cloud-blue flex items-center justify-center text-seotriks-blue mb-6">
+              <span class="material-symbols-outlined text-2xl">filter_alt</span>
+            </div>
+            <h3 class="text-xl font-bold text-deep-navy mb-3">Complexity to Clarity</h3>
+            <p class="text-sm text-secondary-text mb-6 leading-relaxed">
+              Automated triage distills 10,000+ crawl errors into the top 3 highest-leverage items to fix today. No more wading through spreadsheet graveyards.
+            </p>
+          </div>
+          <div class="p-4 rounded-xl bg-ice-blue flex items-center justify-between border border-light-border">
+            <span class="text-xs font-semibold text-secondary-text">Avg. resolution velocity</span>
+            <span class="text-sm font-extrabold text-seotriks-blue">3.4x Faster</span>
+          </div>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="p-8 rounded-2xl bg-white border border-light-border shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-cloud-blue flex items-center justify-center text-seotriks-blue mb-6">
+              <span class="material-symbols-outlined text-2xl">shield_with_heart</span>
+            </div>
+            <h3 class="text-xl font-bold text-deep-navy mb-3">24/7 SEO Defense Guard</h3>
+            <p class="text-sm text-secondary-text mb-6 leading-relaxed">
+              Active algorithmic surveillance triggers instant webhooks when canonicals change, robots directives drop, or critical pages lose schema integrity.
+            </p>
+          </div>
+          <div class="p-4 rounded-xl bg-ice-blue flex items-center justify-between border border-light-border">
+            <span class="text-xs font-semibold text-secondary-text">De-indexation prevention</span>
+            <span class="text-sm font-extrabold text-status-success">99.8% Safety</span>
+          </div>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="p-8 rounded-2xl bg-white border border-light-border shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-cloud-blue flex items-center justify-center text-seotriks-blue mb-6">
+              <span class="material-symbols-outlined text-2xl">radar</span>
+            </div>
+            <h3 class="text-xl font-bold text-deep-navy mb-3">Growth Opportunity Radar</h3>
+            <p class="text-sm text-secondary-text mb-6 leading-relaxed">
+              High-intent keyword gaps and decaying legacy content are mathematically ranked by conversion value, making your next content sprint foolproof.
+            </p>
+          </div>
+          <div class="p-4 rounded-xl bg-ice-blue flex items-center justify-between border border-light-border">
+            <span class="text-xs font-semibold text-secondary-text">Identified revenue lift</span>
+            <span class="text-sm font-extrabold text-seotriks-blue">+27% Avg</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SERVICES BENTO GRID -->
+  <section class="w-full py-20 px-6 bg-white border-t border-light-border">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+        <div>
+          <span class="text-xs text-seotriks-blue font-extrabold tracking-widest uppercase">The SEOtriks Suite</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-deep-navy mt-2">Comprehensive Search Intelligence</h2>
+        </div>
+        <p class="text-sm sm:text-base text-secondary-text max-w-md">
+          A coherent operational ecosystem configured for real-time organic discovery and technical durability.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <!-- Bento 1: Deep Crawler Diagnostics (8 Cols) -->
+        <div class="md:col-span-8 p-8 rounded-2xl bg-ice-blue border border-cloud-blue shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full bg-cloud-blue text-seotriks-blue text-xs font-bold">Technical Architecture</span>
+              <span class="text-xs text-secondary-text font-semibold">Real-time Stream</span>
+            </div>
+            <h3 class="text-2xl font-bold text-deep-navy mb-3">Continuous Search Signal Spider</h3>
+            <p class="text-sm text-secondary-text max-w-xl mb-6">
+              Our headless crawler parses JavaScript execution, discovers orphan clusters, verifies hreflang parity, and graphs site depth down to level 10.
+            </p>
+          </div>
+          <!-- Crawl Topology Visualization -->
+          <div class="p-5 rounded-xl bg-white border border-light-border">
+            <div class="flex items-center justify-between text-xs font-bold mb-3">
+              <span class="text-deep-navy">Site Topology Depth Index</span>
+              <span class="text-seotriks-blue font-mono">12,482 Nodes Analyzed</span>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+              <div class="p-3 bg-ice-blue rounded-lg">
+                <span class="block text-lg font-bold text-deep-navy">Level 1</span>
+                <span class="text-xs text-status-success font-semibold">100% Indexable</span>
+              </div>
+              <div class="p-3 bg-ice-blue rounded-lg">
+                <span class="block text-lg font-bold text-deep-navy">Level 2</span>
+                <span class="text-xs text-status-success font-semibold">98.4% Pass</span>
+              </div>
+              <div class="p-3 bg-ice-blue rounded-lg">
+                <span class="block text-lg font-bold text-deep-navy">Level 3</span>
+                <span class="text-xs text-status-warning font-semibold">91.2% Pass</span>
+              </div>
+              <div class="p-3 bg-ice-blue rounded-lg">
+                <span class="block text-lg font-bold text-deep-navy">Level 4+</span>
+                <span class="text-xs text-status-critical font-semibold">24 Deep Orphans</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bento 2: SERP Radar (4 Cols) -->
+        <div class="md:col-span-4 p-8 rounded-2xl bg-ice-blue border border-cloud-blue shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full bg-cloud-blue text-seotriks-blue text-xs font-bold">Competitive Intel</span>
+              <span class="material-symbols-outlined text-seotriks-blue text-xl">query_stats</span>
+            </div>
+            <h3 class="text-2xl font-bold text-deep-navy mb-3">SERP Fluctuation Radar</h3>
+            <p class="text-sm text-secondary-text mb-6">
+              Track algorithm turbulence and preempt competitors capturing your prime snippet listings.
+            </p>
+          </div>
+          <div class="space-y-3">
+            <div class="p-3 rounded-lg bg-white border border-light-border flex items-center justify-between">
+              <span class="text-xs font-semibold text-deep-navy truncate">"ai seo automation"</span>
+              <span class="px-2 py-0.5 rounded bg-cloud-blue text-seotriks-blue font-bold text-xs">#2 ↑ 3</span>
+            </div>
+            <div class="p-3 rounded-lg bg-white border border-light-border flex items-center justify-between">
+              <span class="text-xs font-semibold text-deep-navy truncate">"technical crawl audit"</span>
+              <span class="px-2 py-0.5 rounded bg-cloud-blue text-seotriks-blue font-bold text-xs">#1 HOLD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bento 3: Content Intelligence (4 Cols) -->
+        <div class="md:col-span-4 p-8 rounded-2xl bg-ice-blue border border-cloud-blue shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full bg-cloud-blue text-seotriks-blue text-xs font-bold">Semantic Coverage</span>
+              <span class="material-symbols-outlined text-seotriks-blue text-xl">edit_note</span>
+            </div>
+            <h3 class="text-2xl font-bold text-deep-navy mb-3">Content Decay & Refresh</h3>
+            <p class="text-sm text-secondary-text mb-6">
+              Pinpoint high-performing articles that lost impression share and get AI-generated refresh briefs.
+            </p>
+          </div>
+          <div class="p-4 rounded-xl bg-white border border-light-border flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-seotriks-blue text-white flex items-center justify-center font-bold">
+              <span class="material-symbols-outlined">update</span>
+            </div>
+            <div>
+              <div class="text-sm font-bold text-deep-navy">18 Evergreen Assets</div>
+              <div class="text-xs text-secondary-text">Ready for algorithmic refresh</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bento 4: Automated Schema & Edge Scripts (8 Cols) -->
+        <div class="md:col-span-8 p-8 rounded-2xl bg-ice-blue border border-cloud-blue shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full bg-cloud-blue text-seotriks-blue text-xs font-bold">Edge Acceleration</span>
+              <span class="text-xs text-seotriks-blue font-bold">Cloudflare & Fastly Ready</span>
+            </div>
+            <h3 class="text-2xl font-bold text-deep-navy mb-3">Instant Schema & Redirect Injection</h3>
+            <p class="text-sm text-secondary-text max-w-xl mb-6">
+              Implement structured JSON-LD schemas and fix cascading redirect hops directly via CDN workers without waiting for standard sprint development deployments.
+            </p>
+          </div>
+          <div class="p-4 rounded-xl bg-deep-navy font-mono text-xs text-cloud-blue flex items-center justify-between">
+            <span class="truncate">&lt;script type="application/ld+json"&gt;{"@context":"https://schema.org","@type":"SoftwareApplication"...}&lt;/script&gt;</span>
+            <span class="px-2.5 py-1 rounded bg-seotriks-blue text-white font-sans text-xs font-bold shrink-0 ml-3">Verified JSON</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. AI AGENT PRODUCT SHOWCASE -->
+  <section class="w-full py-24 px-6 bg-ice-blue">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-5 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cloud-blue text-seotriks-blue text-xs font-bold">
+          <span class="material-symbols-outlined text-base">smart_toy</span>
+          Autonomous SEO Engineer
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-deep-navy tracking-tight leading-tight">
+          Don't just find issues. Have our Agent write the fix.
+        </h2>
+        <p class="text-base text-secondary-text leading-relaxed">
+          The SEOtriks Agent analyzes your entire stack, drafts exact pull requests, outputs validated JSON-LD schema payloads, and provides one-click edge worker configs.
+        </p>
+        <ul class="space-y-3 pt-2 text-sm text-deep-navy font-medium">
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-status-success text-xl">check_circle</span>
+            <span>One-click GitHub pull requests for missing canonicals & meta data</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-status-success text-xl">check_circle</span>
+            <span>Generates error-free Schema.org JSON-LD definitions</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-status-success text-xl">check_circle</span>
+            <span>Synthesizes robots.txt rules that safeguard server crawl budget</span>
+          </li>
+        </ul>
+        <div class="pt-4">
+          <a href="/services" class="inline-flex items-center gap-2 bg-seotriks-blue hover:bg-[#326ec8] text-white text-sm font-bold px-6 py-3 rounded-lg shadow-sm transition-all">
+            <span>Explore Agent Capabilities</span>
+            <span class="material-symbols-outlined text-base">chevron_right</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Agent Terminal Preview -->
+      <div class="lg:col-span-7 rounded-2xl bg-deep-navy text-white shadow-2xl p-6 sm:p-8 overflow-hidden">
+        <div class="flex items-center justify-between pb-4 mb-4 border-b border-white/10">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-seotriks-blue flex items-center justify-center text-white font-bold">
+              <span class="material-symbols-outlined text-base">terminal</span>
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">SEOtriks Copilot Shell</div>
+              <div class="text-xs text-soft-blue">Session: Autonomous Audit Mode #382</div>
+            </div>
+          </div>
+          <span class="px-2.5 py-1 rounded bg-seotriks-blue/20 text-cloud-blue text-xs font-mono">AGENT IDLE</span>
+        </div>
+        <div class="space-y-4 font-mono text-xs sm:text-sm">
+          <div class="flex items-start gap-2">
+            <span class="text-medium-blue font-bold">&gt; user:</span>
+            <p class="text-white">Check why Google isn't indexing our recent product release at /products/enterprise-v2.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+            <div class="flex items-center gap-2 text-cloud-blue font-bold mb-2">
+              <span class="material-symbols-outlined text-base">neurology</span> SEOtriks Agent:
+            </div>
+            <p class="text-white/80 font-sans text-xs mb-3">
+              Identified blocker: The target URL contains <code class="text-medium-blue bg-white/10 px-1 py-0.5 rounded">&lt;meta name="robots" content="noindex"&gt;</code> inherited from the staging environment template.
+            </p>
+            <div class="p-3 rounded bg-black/40 text-xs font-mono text-white/90 overflow-x-auto mb-3">
+              <span class="text-white/40">// Proposed Git Diff for page-header.tsx</span><br/>
+              <span class="text-status-critical">- &lt;meta name="robots" content="noindex, nofollow" /&gt;</span><br/>
+              <span class="text-status-success">+ &lt;meta name="robots" content="index, follow, max-image-preview:large" /&gt;</span>
+            </div>
+            <div class="flex items-center gap-3 font-sans">
+              <button class="bg-seotriks-blue hover:bg-[#326ec8] text-white text-xs font-bold px-4 py-1.5 rounded transition-all">
+                Create Pull Request
+              </button>
+              <button class="bg-white/10 hover:bg-white/20 text-white text-xs font-semibold px-3 py-1.5 rounded transition-all">
+                Copy Snippet
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. HOW IT WORKS WORKFLOW -->
+  <section class="w-full py-24 px-6 bg-white border-t border-light-border">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs text-seotriks-blue font-extrabold tracking-widest uppercase">The Operating Model</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-deep-navy mt-2 tracking-tight">
+          How SEOtriks powers your organic engine
+        </h2>
+        <p class="text-base sm:text-lg text-secondary-text mt-3">
+          Zero lengthy onboarding. Start generating verifiable crawl wins within 10 minutes of integration.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Step 1 -->
+        <div class="p-8 rounded-2xl bg-ice-blue border border-cloud-blue flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-8">
+              <span class="text-5xl font-black text-soft-blue">01</span>
+              <div class="w-12 h-12 rounded-xl bg-cloud-blue flex items-center justify-center text-seotriks-blue">
+                <span class="material-symbols-outlined text-2xl">cable</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-deep-navy mb-3">Connect Your Domain</h3>
+            <p class="text-sm text-secondary-text leading-relaxed">
+              Plug in your root domain, Google Search Console, or CDN endpoints. SEOtriks immediately generates a full crawl vector graph without rate-limiting your servers.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 flex items-center text-seotriks-blue text-xs font-bold">
+            <span>Takes &lt; 60 seconds</span>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="p-8 rounded-2xl bg-ice-blue border border-cloud-blue flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-8">
+              <span class="text-5xl font-black text-soft-blue">02</span>
+              <div class="w-12 h-12 rounded-xl bg-cloud-blue flex items-center justify-center text-seotriks-blue">
+                <span class="material-symbols-outlined text-2xl">model_training</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-deep-navy mb-3">AI Prioritizes Value</h3>
+            <p class="text-sm text-secondary-text leading-relaxed">
+              Our algorithmic engine eliminates trivial audit noise and filters directly to the 3-5 changes that will deliver measurable impression and traffic gains.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 flex items-center text-seotriks-blue text-xs font-bold">
+            <span>Zero manual spreadsheet work</span>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="p-8 rounded-2xl bg-ice-blue border border-cloud-blue flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-8">
+              <span class="text-5xl font-black text-soft-blue">03</span>
+              <div class="w-12 h-12 rounded-xl bg-cloud-blue flex items-center justify-center text-seotriks-blue">
+                <span class="material-symbols-outlined text-2xl">published_with_changes</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-deep-navy mb-3">Deploy & Verify Impact</h3>
+            <p class="text-sm text-secondary-text leading-relaxed">
+              Ship recommended code or metadata fixes. The system instantly performs before/after recrawls and charts your organic ranking acceleration.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 flex items-center text-seotriks-blue text-xs font-bold">
+            <span>Automated re-crawl confirmations</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. BEFORE / AFTER COMPARISON SECTION -->
+  <section class="w-full py-24 px-6 bg-ice-blue">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs text-seotriks-blue font-extrabold tracking-widest uppercase">The Paradigm Shift</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-deep-navy mt-2 tracking-tight">
+          Legacy Dashboards vs. SEOtriks Action Engine
+        </h2>
+        <p class="text-base sm:text-lg text-secondary-text mt-3">
+          See why modern growth leaders are migrating away from static tables and passive monitoring.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        <!-- Legacy Side -->
+        <div class="p-8 sm:p-10 rounded-2xl bg-white border border-light-border shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <span class="material-symbols-outlined text-secondary-text text-2xl">cancel</span>
+              <h3 class="text-xl font-bold text-deep-navy">Traditional SEO Tools</h3>
+            </div>
+            <ul class="space-y-4 text-sm text-secondary-text">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-status-critical text-base mt-0.5">close</span>
+                <span>Endless 50,000-row CSV exports that overwhelm your engineering squad</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-status-critical text-base mt-0.5">close</span>
+                <span>No context on which crawl warning actually hurts search revenue</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-status-critical text-base mt-0.5">close</span>
+                <span>Manual re-verification required weeks after code has deployed</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-status-critical text-base mt-0.5">close</span>
+                <span>Fragmented tools for rankings, crawlers, content, and schemas</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 p-4 rounded-xl bg-ice-blue border border-light-border text-xs text-secondary-text font-bold text-center">
+            Outcome: Analysis paralysis & stalled sprints
+          </div>
+        </div>
+
+        <!-- SEOtriks Side -->
+        <div class="p-8 sm:p-10 rounded-2xl bg-white border-2 border-seotriks-blue shadow-lg flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-cloud-blue/50 rounded-full blur-2xl pointer-events-none"></div>
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-seotriks-blue text-2xl">check_circle</span>
+                <h3 class="text-xl font-bold text-deep-navy">SEOtriks Action Engine</h3>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-cloud-blue text-seotriks-blue text-xs font-bold">THE NEW STANDARD</span>
+            </div>
+            <ul class="space-y-4 text-sm text-deep-navy font-medium">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-status-success text-base mt-0.5">done</span>
+                <span><strong>Prioritized 3-item queues</strong> ranked directly by algorithmic leverage</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-status-success text-base mt-0.5">done</span>
+                <span><strong>AI Code Generation:</strong> Copy-ready PRs, JSON-LD, and robots directives</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-status-success text-base mt-0.5">done</span>
+                <span><strong>Instant post-deploy spider</strong> triggers automatically upon URL release</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-status-success text-base mt-0.5">done</span>
+                <span><strong>Real-time 24/7 Shield:</strong> Defends against meta alterations & index drops</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 p-4 rounded-xl bg-seotriks-blue text-white text-xs font-bold text-center shadow-sm">
+            Outcome: 3x faster fix velocity & +64% organic growth
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. TESTIMONIALS & SOCIAL PROOF -->
+  <section class="w-full py-24 px-6 bg-white border-t border-light-border">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs text-seotriks-blue font-extrabold tracking-widest uppercase">Verified Results</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-deep-navy mt-2 tracking-tight">
+          What search leaders achieve with SEOtriks
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Review 1 -->
+        <div class="p-8 rounded-2xl bg-ice-blue border border-cloud-blue flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-status-warning mb-4">
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="text-sm text-primary-text italic mb-6 leading-relaxed">
+              "We retired a 4-tool stack for SEOtriks. The Priority Queue alone saved our engineering team 30 hours of meaningless debugging last month."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-cloud-blue">
+            <div class="w-10 h-10 rounded-full bg-seotriks-blue text-white flex items-center justify-center font-bold text-sm">SL</div>
+            <div>
+              <div class="text-sm font-bold text-deep-navy">Sarah Lindqvist</div>
+              <div class="text-xs text-secondary-text">VP Growth, Veloce Labs</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="p-8 rounded-2xl bg-ice-blue border border-cloud-blue flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-status-warning mb-4">
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="text-sm text-primary-text italic mb-6 leading-relaxed">
+              "SEO Guard caught a staging meta robots tag that made it to our live catalog at 2 AM. That single notification prevented a catastrophe."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-cloud-blue">
+            <div class="w-10 h-10 rounded-full bg-medium-blue text-white flex items-center justify-center font-bold text-sm">DR</div>
+            <div>
+              <div class="text-sm font-bold text-deep-navy">David Rivera</div>
+              <div class="text-xs text-secondary-text">Head of SEO, StackWave</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="p-8 rounded-2xl bg-ice-blue border border-cloud-blue flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-status-warning mb-4">
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="text-sm text-primary-text italic mb-6 leading-relaxed">
+              "The automatic GitHub Pull Request generator is magic. Our dev team actually merges SEO tickets now because the code diff is already written."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-cloud-blue">
+            <div class="w-10 h-10 rounded-full bg-deep-navy text-white flex items-center justify-center font-bold text-sm">MK</div>
+            <div>
+              <div class="text-sm font-bold text-deep-navy">Markus Keller</div>
+              <div class="text-xs text-secondary-text">Founder, DevPulse Digital</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FINAL HIGH-IMPACT CONVERSION CTA -->
+  <section class="w-full py-20 px-6 bg-gradient-to-r from-medium-blue via-seotriks-blue to-deep-navy text-white text-center relative overflow-hidden">
+    <div class="relative max-w-4xl mx-auto space-y-6">
+      <div class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-md mx-auto flex items-center justify-center text-white">
+        <span class="material-symbols-outlined text-2xl">rocket_launch</span>
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+        Ready to diagnose and fix your ranking blind spots?
+      </h2>
+      <p class="text-base sm:text-lg text-cloud-blue max-w-2xl mx-auto leading-relaxed">
+        Join over 12,000 engineering-led growth teams using SEOtriks to turn ambiguous search traffic into high-converting revenue.
+      </p>
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/pricing" class="w-full sm:w-auto bg-white text-seotriks-blue hover:bg-cloud-blue font-bold px-8 py-3.5 rounded-lg shadow-lg transition-all active:scale-95 text-base">
+          Start 14-Day Free Trial
+        </a>
+        <a href="/contact" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-semibold px-7 py-3.5 rounded-lg border border-white/20 transition-all text-base">
+          Schedule Engineer Call
+        </a>
+      </div>
+      <p class="text-xs text-cloud-blue/80 pt-2">No credit card required • Connects in 60 seconds • Cancel anytime</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- GLOBAL FOOTER -->
+<footer class="w-full bg-deep-navy text-white relative overflow-hidden border-t border-white/10">
+  <div class="relative max-w-7xl mx-auto px-6 pt-16 pb-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-16">
+      <div class="lg:col-span-2 space-y-4">
+        <div class="flex items-center gap-3">
+          <img alt="SEOtriks Logo" class="h-7 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AEtjO1VPP_Ei-L9LUBaiPtAxGIJOJp_B9mlaHqHGKP3VemSWAey25P3a0LjZvi8jHrgxIAhp_F3wtyfYCc10haNZj6wGSGtnuN0sfj6A9ZgH5K4OflFzdu6Sy3e3Hv2iUxTtropJ4VZNsL2p_KFp6erNvTcmL5humRlKv0THPeIOGecHo5sfIiykOkYNXyDRoq30wFrEVw5l5qxeiP60czvBQXcFnLa_QuRlpHnkEeo0qi8TyA2R-iFcwVCodS4"/>
+        </div>
+        <p class="text-sm text-soft-blue/80 max-w-sm leading-relaxed">
+          SEO made actionable. Find what matters. Know what to fix. See what improved.
+        </p>
+        <div class="pt-2">
+          <div class="text-xs font-bold text-white uppercase tracking-wider mb-2">Stay updated with Search Signals</div>
+          <form class="flex items-center gap-2 max-w-sm" onsubmit="return false;">
+            <input class="flex-1 bg-white/10 text-white placeholder:text-soft-blue/60 text-xs px-3.5 py-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-seotriks-blue" placeholder="Enter work email" type="email"/>
+            <button class="bg-seotriks-blue hover:bg-[#326ec8] text-white text-xs font-bold px-4 py-2.5 rounded-lg transition-colors shrink-0" type="button">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div>
+        <div class="text-xs font-extrabold uppercase tracking-wider text-soft-blue mb-4">Product</div>
+        <ul class="space-y-2 text-sm text-soft-blue/70">
+          <li><a href="/services" class="hover:text-white transition-colors">AI Keyword Intel</a></li>
+          <li><a href="/services" class="hover:text-white transition-colors">Technical Crawler</a></li>
+          <li><a href="/services" class="hover:text-white transition-colors">SERP Signal Visualizer</a></li>
+          <li><a href="/services" class="hover:text-white transition-colors">Automated Audits</a></li>
+          <li><a href="/services" class="hover:text-white transition-colors">Content Optimizer</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="text-xs font-extrabold uppercase tracking-wider text-soft-blue mb-4">Solutions</div>
+        <ul class="space-y-2 text-sm text-soft-blue/70">
+          <li><a href="/services" class="hover:text-white transition-colors">Enterprise SEO</a></li>
+          <li><a href="/services" class="hover:text-white transition-colors">Agencies & Consultants</a></li>
+          <li><a href="/services" class="hover:text-white transition-colors">SaaS Growth Teams</a></li>
+          <li><a href="/services" class="hover:text-white transition-colors">E-Commerce Catalog</a></li>
+          <li><a href="/services" class="hover:text-white transition-colors">Publishers & Media</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="text-xs font-extrabold uppercase tracking-wider text-soft-blue mb-4">Resources</div>
+        <ul class="space-y-2 text-sm text-soft-blue/70">
+          <li><a href="/blog" class="hover:text-white transition-colors">Documentation</a></li>
+          <li><a href="/blog" class="hover:text-white transition-colors">Algorithm Updates</a></li>
+          <li><a href="/blog" class="hover:text-white transition-colors">Crawl Diagnostics API</a></li>
+          <li><a href="/blog" class="hover:text-white transition-colors">Community Guides</a></li>
+          <li><a href="/blog" class="hover:text-white transition-colors">Changelog</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="text-xs font-extrabold uppercase tracking-wider text-soft-blue mb-4">Company</div>
+        <ul class="space-y-2 text-sm text-soft-blue/70">
+          <li><a href="/about" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="/about" class="hover:text-white transition-colors">Careers</a></li>
+          <li><a href="/contact" class="hover:text-white transition-colors">Security & Compliance</a></li>
+          <li><a href="/contact" class="hover:text-white transition-colors">Privacy Policy</a></li>
+          <li><a href="/contact" class="hover:text-white transition-colors">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-soft-blue/60">
+      <p>© 2025 SEOtriks Inc. All algorithmic signals and indices reserved.</p>
+      <div class="flex items-center gap-6">
+        <span class="hover:text-white cursor-pointer transition-colors">Privacy Shield</span>
+        <span class="hover:text-white cursor-pointer transition-colors flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+          Status: All Crawlers Operational
+        </span>
+        <span class="hover:text-white cursor-pointer transition-colors">Terms</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

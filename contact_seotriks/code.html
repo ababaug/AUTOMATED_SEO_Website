@@ -402,41 +402,41 @@
 <div class="space-y-space-sm" id="faq-accordion">
 <!-- FAQ Item 1 -->
 <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm" data-aos="fade-up" data-aos-duration="1000">
-<button class="w-full flex items-center justify-between text-left gap-4" data-aos="fade-up" data-aos-delay="300" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow-icon').classList.toggle('rotate-180');" type="button">
+<button aria-controls="faq-answer-1" aria-expanded="true" class="w-full flex items-center justify-between text-left gap-4" data-aos="fade-up" data-aos-delay="300" onclick="let expanded = this.getAttribute('aria-expanded') === 'true'; this.setAttribute('aria-expanded', !expanded); this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow-icon').classList.toggle('rotate-180');" type="button">
 <span class="font-headline-sm text-headline-sm text-on-surface font-semibold">What actually happens during a live 30-minute product tour?</span>
-<span class="material-symbols-outlined text-on-surface-variant arrow-icon transition-transform">expand_more</span>
+<span class="material-symbols-outlined text-on-surface-variant arrow-icon transition-transform rotate-180">expand_more</span>
 </button>
-<div class="pt-3 font-body-md text-body-md text-on-surface-variant">
+<div class="pt-3 font-body-md text-body-md text-on-surface-variant" id="faq-answer-1">
           We plug your actual domain into the SEOtriks deep-crawler in real-time. You'll observe site architecture trace paths, discover cannibalized keywords, inspect orphan pages, and see concrete ranking acceleration opportunities mapped out by our solutions engineers.
         </div>
 </div>
 <!-- FAQ Item 2 -->
 <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm" data-aos="fade-up" data-aos-duration="1000">
-<button class="w-full flex items-center justify-between text-left gap-4" data-aos="fade-up" data-aos-delay="300" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow-icon').classList.toggle('rotate-180');" type="button">
+<button aria-controls="faq-answer-2" aria-expanded="false" class="w-full flex items-center justify-between text-left gap-4" data-aos="fade-up" data-aos-delay="300" onclick="let expanded = this.getAttribute('aria-expanded') === 'true'; this.setAttribute('aria-expanded', !expanded); this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow-icon').classList.toggle('rotate-180');" type="button">
 <span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Can we configure custom enterprise crawl frequency and white-label reporting?</span>
 <span class="material-symbols-outlined text-on-surface-variant arrow-icon transition-transform">expand_more</span>
 </button>
-<div class="pt-3 font-body-md text-body-md text-on-surface-variant hidden">
+<div class="pt-3 font-body-md text-body-md text-on-surface-variant hidden" id="faq-answer-2">
           Yes. Enterprise plans support dedicated proxies, scheduled daily or continuous multi-million URL crawls, custom rendering bypasses for Cloudflare/Akamai, and full agency white-label portals mapped to your custom CNAME subdomains.
         </div>
 </div>
 <!-- FAQ Item 3 -->
 <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm" data-aos="fade-up" data-aos-duration="1000">
-<button class="w-full flex items-center justify-between text-left gap-4" data-aos="fade-up" data-aos-delay="300" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow-icon').classList.toggle('rotate-180');" type="button">
+<button aria-controls="faq-answer-3" aria-expanded="false" class="w-full flex items-center justify-between text-left gap-4" data-aos="fade-up" data-aos-delay="300" onclick="let expanded = this.getAttribute('aria-expanded') === 'true'; this.setAttribute('aria-expanded', !expanded); this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow-icon').classList.toggle('rotate-180');" type="button">
 <span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Will the SEOtriks crawler place excessive load on our production web servers?</span>
 <span class="material-symbols-outlined text-on-surface-variant arrow-icon transition-transform">expand_more</span>
 </button>
-<div class="pt-3 font-body-md text-body-md text-on-surface-variant hidden">
+<div class="pt-3 font-body-md text-body-md text-on-surface-variant hidden" id="faq-answer-3">
           Never. SEOtriks features automated adaptive throttling. Our bots calculate server response times and naturally lower concurrency if latency rises by more than 8%. You also have complete manual control over crawl speeds, concurrency caps, and robots.txt honoring rules.
         </div>
 </div>
 <!-- FAQ Item 4 -->
 <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm" data-aos="fade-up" data-aos-duration="1000">
-<button class="w-full flex items-center justify-between text-left gap-4" data-aos="fade-up" data-aos-delay="300" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow-icon').classList.toggle('rotate-180');" type="button">
+<button aria-controls="faq-answer-4" aria-expanded="false" class="w-full flex items-center justify-between text-left gap-4" data-aos="fade-up" data-aos-delay="300" onclick="let expanded = this.getAttribute('aria-expanded') === 'true'; this.setAttribute('aria-expanded', !expanded); this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow-icon').classList.toggle('rotate-180');" type="button">
 <span class="font-headline-sm text-headline-sm text-on-surface font-semibold">How quickly can we migrate historical data from Ahrefs or Semrush?</span>
 <span class="material-symbols-outlined text-on-surface-variant arrow-icon transition-transform">expand_more</span>
 </button>
-<div class="pt-3 font-body-md text-body-md text-on-surface-variant hidden">
+<div class="pt-3 font-body-md text-body-md text-on-surface-variant hidden" id="faq-answer-4">
           Our automated CSV and JSON ingestion pipelines allow seamless keyword position history, competitor tracking lists, and backlink audit histories to be uploaded in seconds. Dedicated migration managers assist all enterprise agency accounts.
         </div>
 </div>

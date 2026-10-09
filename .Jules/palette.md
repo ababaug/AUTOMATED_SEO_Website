@@ -1,0 +1,3 @@
+## 2026-10-09 - [FAQ Accordion Accessibility]
+**Learning:** Custom accordion implementations often lack semantic HTML or ARIA attributes, making them inaccessible to screen readers. Specifically, they miss `aria-expanded` on the toggle buttons and `aria-controls` linking to the content sections. Furthermore, their initial open/closed state (visuals vs ARIA attributes) must be kept in sync.
+**Action:** When encountering custom accordions (e.g. using Tailwind utility classes and inline JS), add `aria-expanded` and `aria-controls` to the buttons, give the target contents an `id`, and ensure the toggling logic correctly flips `aria-expanded` between true and false.

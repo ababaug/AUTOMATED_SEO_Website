@@ -1,0 +1,3 @@
+## 2023-10-15 - Fixed Non-Semantic Interactive Element
+**Learning:** Found a common pattern of using non-semantic `<div>` elements with `onclick` and `cursor-pointer` for interactive components like the Live Chat trigger. This approach lacks native keyboard accessibility (tabbing/focus) and semantic meaning for screen readers.
+**Action:** Replace these non-semantic `<div>` elements with proper `<button>` (or `<a>` if navigating) tags. Remove unnecessary `cursor-pointer` classes (buttons have them natively) and add `focus-visible` styles for better keyboard accessibility. Also ensure `w-full text-left` is used if needed to preserve layout.
